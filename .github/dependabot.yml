@@ -29,7 +29,7 @@ registries:
     username: okimaureen
     password: ${{secrets.MY_PAT}}
 updates:
-  - package-ecosystem: "docker"
+  - package-ecosystem: "github-actions"
     directory: "/"
     registries:
       -  github-octocat # Allow version updates for dependencies in this registry
