@@ -13,7 +13,7 @@ jobs:
       - id: foo
         uses: actions/codeqlTest@v1
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'Mona the Octocat fried'
       # - name: Generate Git Tag
       #   id: generate_tag
       #   run: |
