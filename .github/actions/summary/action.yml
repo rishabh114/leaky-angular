@@ -1,0 +1,53 @@
+runs:
+  using: 'composite'
+  steps:
+    - name: Set GitHub Summary
+      run: |
+        echo "This is the lead in sentence for the list" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY # this is a blank line
+        echo "- Lets add a bullet point" >> $GITHUB_STEP_SUMMARY
+        echo "- Lets add a second bullet point" >> $GITHUB_STEP_SUMMARY
+        echo "- How about a third one?" >> $GITHUB_STEP_SUMMARY
+      shell: bash
+   
+    - name: Set GitHub Path
+      run: |
+        echo "Hello there" >> "$GITHUB_STEP_SUMMARY"
+      shell: bash
+
+    - name: Set GitHub Path
+      run: |
+        echo "Hello my" >> "$GITHUB_STEP_SUMMARY"
+      shell: bash
+
+
+    - name: Set GitHub Path
+      run: |
+        echo "Hello you" >> "$GITHUB_STEP_SUMMARY"
+      shell: bash
+      
+    # - name: Step 1
+    #   id: cs-output
+    #   shell: bash
+    #   run: |
+    #     vers=$(bash --version)
+    #     printf "## Step 1\nVery important value: \`${vers}\`\n\n"  >> "$GITHUB_STEP_SUMMARY"
+
+    # - name: Step 2
+    #   shell: bash
+    #   run: |
+    #     vers=$(bash --version)
+    #     printf "## Step 2\nVery important value: \`${vers}\`\n\n"  >> "$GITHUB_STEP_SUMMARY"
+
+    # - name: Step 3
+    #   shell: bash
+    #   run: |
+    #     vers=$(bash --version)
+    #     printf "## Step 3\nVery important value: \`${vers}\`\n\n"  >> "$GITHUB_STEP_SUMMARY"
+
+    # - name: Set GitHub Path
+    #   run: |
+    #     printf "Hello there" >> "$GITHUB_STEP_SUMMARY"
+    #   shell: bash
+
+     
